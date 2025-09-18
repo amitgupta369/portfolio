@@ -11,10 +11,10 @@
 
 <div id="header"></div>
 
-<section>
+<section class="container">
   <h2>Contact Me</h2>
   <div class="card">
-    <p>If you want to get in touch regarding projects, collaboration, or career opportunities, feel free to contact me using any of the following options:</p>
+    <p>If you want to get in touch regarding projects, collaboration, or career opportunities, feel free to contact me using any of the following options or the form below:</p>
     <ul>
       <li><strong>Email:</strong> <a href="mailto:amitgupta369@gmail.com">amitgupta369@gmail.com</a></li>
       <li><strong>Phone:</strong> +91-8689XXXXXX</li>
@@ -22,6 +22,20 @@
       <li><strong>GitHub:</strong> <a href="https://github.com/amitgupta369" target="_blank">github.com/amitgupta369</a></li>
       <li><strong>Portfolio:</strong> <a href="https://amitgupta369.github.io/portfolio/" target="_blank">amitgupta369.github.io/portfolio/</a></li>
     </ul>
+
+    <h3>Send me a message</h3>
+    <form action="https://formspree.io/f/mblavnqr" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </div>
 </section>
 
