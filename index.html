@@ -4,71 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amit Gupta | Solution Architect</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 { margin: 0; font-size: 2em; }
-    header p { margin: 5px 0; }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #2c3e50;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
-    .project {
-      background: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #2c3e50;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    a { color: #2980b9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.counter.dev/script.js" data-id="5424b49b-7df7-434c-ab1c-503425cb7452" data-utcoffset="5.5"></script>
 </head>
 <body>
 
-<header>
-  <h1>Amit Gupta</h1>
-  <p>📱 +91-8689877700 | ✉️ amitgupta369@gmail.com</p>
-  <p>Solution Architect | Cloud & Automation | Python | StackStorm</p>
+<header class="site-header">
+  <div class="header-container">
+    <img src="images/AmitGupta.png" alt="Amit Gupta" class="profile-photo">
+    <div class="header-text">
+      <h1>Amit Gupta</h1>
+      <p class="contact">📱 +91-8689XXXXXX | ✉️ amitgupta369@gmail.com</p>
+      <p class="tagline">Solution Architect | Cloud & Automation | Python | StackStorm</p>
+    </div>
+  </div>
 </header>
 
-<section>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="pages/aws.html">AWS & DevOps</a></li>
+    <li><a href="pages/stackstorm.html">StackStorm</a></li>
+    <li><a href="pages/naasbot.html">NaasBot</a></li>
+    <li><a href="pages/odoo.html">Odoo / ERP</a></li>
+    <li><a href="pages/projects.html">Projects</a></li>
+    <li><a href="pages/employment.html">Employment</a></li>
+    <li><a href="pages/contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="container">
   <h2>About Me</h2>
   <p>
-    I am a Solution Architect with 15+ years of IT experience in cloud automation, network orchestration, and ERP solutions. 
+    I am a Solution Architect with 15+ years of IT experience in cloud automation, network orchestration, and ERP solutions.
     Skilled in AWS, Terraform, StackStorm, Python, Ansible, and DevOps practices, with a strong background in ERP implementations.
   </p>
 </section>
 
-<section>
+<section class="container">
   <h2>Key Skills</h2>
   <ul>
-    <li>Cloud & DevOps: AWS, Terraform, Kubernetes, Docker, Ansible, CI/CD</li>
+    <li>Cloud & DevOps: AWS, Terraform, Ansible, CI/CD</li>
     <li>Automation: StackStorm, Django REST API, Odoo ERP</li>
     <li>Programming: Python, SQL</li>
     <li>Databases: PostgreSQL, MySQL, MongoDB, CouchDB</li>
@@ -76,10 +53,10 @@
   </ul>
 </section>
 
-<section>
+<section class="container">
   <h2>Highlighted Projects</h2>
 
-  <div class="project">
+  <div class="card">
     <h3>StackStorm Automation Packs</h3>
     <p>Developed custom packs in Python for:</p>
     <ul>
@@ -88,27 +65,30 @@
       <li>MongoDB, SQL integrations, Automation Reporting</li>
       <li>Active Directory, MS Exchange automation</li>
     </ul>
+    <a href="pages/stackstorm.html" class="btn">Read More</a>
   </div>
 
-  <div class="project">
+  <div class="card">
     <h3>AWS Cloud Infrastructure Automation</h3>
     <p>
-      Automated provisioning of AWS resources (VPC, EC2, Subnets, SGs, Route53, VPN) using Terraform. 
-      Implemented Lambda + EventBridge scheduling for EC2 power management → reduced cloud costs by ~25%. 
+      Automated provisioning of AWS resources (VPC, EC2, Subnets, SGs, Route53, VPN) using Terraform.
+      Implemented Lambda + EventBridge scheduling for EC2 power management → reduced cloud costs by ~25%.
       Built CloudFormation + Python solutions for health checks and alerts.
     </p>
+    <a href="pages/aws.html" class="btn">Read More</a>
   </div>
 
-  <div class="project">
+  <div class="card">
     <h3>ERP Solutions (Odoo ERP)</h3>
     <p>
-      Designed and implemented ERP modules for HR, Finance, and Project Management. 
+      Designed and implemented ERP modules for HR, Finance, and Project Management.
       Developed features such as Asset Management, Salary Advance, Petty Cash, and Bonus automation.
     </p>
+    <a href="pages/odoo.html" class="btn">Read More</a>
   </div>
 </section>
 
-<section>
+<section class="container">
   <h2>Awards & Achievements</h2>
   <ul>
     <li>Delivery Dynamos Award – Network Automation</li>

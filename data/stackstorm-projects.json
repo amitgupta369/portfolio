@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Offline Installation Automation",
+    "details": [
+      "Automated end-to-end offline installation of StackStorm from rpm, deb and source code on RHEL, Ubuntu.",
+      "Configured multi-node setups including DB, App, Web nodes with HA support.",
+      "Integrated Python, MongoDB, Redis, RabbitMQ, and OpenResty/Nginx installation via shell scripts.",
+      "Reduced installation time from 20 days to 1 day with fully offline automation."
+    ]
+  },
+  {
+    "title": "Upgrade Automation",
+    "details": [
+      "Automated upgrades of StackStorm, Python, MongoDB, Redis, RabbitMQ, OpenResty/Nginx across single and multi-node.",
+      "Managed version migrations while maintaining HA integrity and minimal downtime.",
+      "Implemented rollback and cleanup scripts for safer upgrade execution.",
+      "Standardized upgrade process for repeatable client deployment."
+    ]
+  },
+  {
+    "title": "Offline Package Download Automation",
+    "details": [
+      "Developed scripts to download all required OS packages (RHEL/Ubuntu) and Python packages for offline installation/upgrades.",
+      "Ensured dependency resolution and offline repository organization for multiple Python versions (3.8, 3.9, 3.11, 3.12).",
+      "Enabled future-proof offline deployments without internet access across client environments.",
+      "Facilitated efficient preparation for installation and upgrade projects at scale."
+    ]
+  },
+  {
+    "title": "Automation Reporting & Monitoring",
+    "details": [
+      "Developed automation reporting pack to generate daily/weekly/monthly SLA compliance reports.",
+      "Integrated reporting with SQL/MongoDB for data persistence and retrieval.",
+      "Enabled dashboards for tracking automation adoption, execution failures, and ticket resolution trends.",
+      "Provided reusable workflows for client-specific reporting requirements."
+    ]
+  },
+  {
+    "title": "Multi-Account Migration",
+    "details": [
+      "Migrated orchestration solutions from legacy platforms into StackStorm for 25+ client accounts.",
+      "Supported 200++ automation scripts into reusable StackStorm workflows and Ansible playbooks.",
+      "Designed modular, scalable packs for multi-tenant environments.",
+      "Ensured minimal downtime and high availability during migrations."
+    ]
+  }
+]

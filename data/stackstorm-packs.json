@@ -1,0 +1,154 @@
+[
+  {
+    "title": "ServiceNow Integration Pack",
+    "duration": "Apr 2023 – Jun 2023",
+    "details": [
+      "Implemented bi-directional integration between StackStorm and ServiceNow using REST APIs.",
+      "Developed sensors (Incident Sensor, RITM Sensor, Task Sensor) to monitor ServiceNow tables and trigger automation workflows.",
+      "Configured both Basic Auth and OAuth authentication with proxies for outgoing integration.",
+      "Created webhook mechanism for push based automation from ServiceNow.",
+      "Reusable pack designed for multiple client instances with configurable parameters.",
+      "Enhanced sensors with lock feature to support multi-node deployments without duplication.",
+      "Enabled configurable Filters for flexible monitoring of Incidents."
+    ]
+  },
+  {
+    "title": "Symphony SummitAI Integration Pack",
+    "details": [
+      "Developed bi-directional communication between StackStorm and Symphony SummitAI via REST APIs.",
+      "Configurable authentication using Basic Auth or API Key with support for proxy details.",
+      "Implemented actions to create, update, and fetch incidents and service requests.",
+      "Pack supports service catalogs, user details lookup.",
+      "Designed sensors to track new incidents and service requests with configurable filters.",
+      "Reusable, parameter-driven pack to work seamlessly across client environments."
+    ]
+  },
+  {
+    "title": "BMC Remedy Integration Pack",
+    "duration": "Jul 2023 – Sep 2023",
+    "details": [
+      "Implemented bi-directional integration between StackStorm and BMC Remedy using REST APIs.",
+      "Developed actions for incident and work order management (get, update).",
+      "Configured JWT-based authentication with secure token handling for API calls.",
+      "Designed sensors (Incident Sensor, Work Order Sensors) to track ticket creation and status changes.",
+      "Enabled configurable Filters for flexible monitoring of Remedy forms.",
+      "Reusable pack designed to support multiple Remedy environments with minimal configuration."
+    ]
+  },
+  {
+    "title": "CyberArk Integration Pack",
+    "details": [
+      "Developed integration with CyberArk to securely retrieve credentials using REST APIs.",
+      "Implemented support for both PasswordVault and AIMWebService authentication flows.",
+      "Configured secure token-based and application-ID based authentication mechanisms.",
+      "Created reusable actions to retrieve and manage secrets stored in CyberArk safes.",
+      "Pack designed with proxy support and configurable parameters for multi-environment deployments."
+    ]
+  },
+  {
+    "title": "BeyondTrust Integration Pack",
+    "details": [
+      "Developed integration with BeyondTrust Password Safe to securely retrieve and manage credentials using REST APIs.",
+      "Implemented actions to request access, retrieve passwords, and establish privileged sessions for managed accounts.",
+      "Configured authentication using API key, session management, and secure sign-out mechanisms.",
+      "Enabled configurable duration_minutes for session requests to support different automation use cases.",
+      "Pack supports both password retrieval and session-based access with flexible parameters."
+    ]
+  },
+  {
+    "title": "Azure Key Vault Integration Pack",
+    "duration": "Jul 2024 – Sep 2024",
+    "details": [
+      "Developed integration with Azure Key Vault for secure management of secrets, keys, and certificates.",
+      "Implemented actions to Get Secret and Set Secret with client ID, tenant ID, and certificate-based authentication.",
+      "Enabled certificate import/export workflows to support service principal authentication using PKCS certificates.",
+      "Designed reusable pack for multiple key vaults with configurable parameters.",
+      "Extended support for JWT signing with Azure Key Vault keys for automation use cases."
+    ]
+  },
+  {
+    "title": "Execution Status Tracker (Reports) Pack",
+    "details": [
+      "Designed and implemented an execution tracking framework for StackStorm actions with support for MongoDB, SQL (MSSQL, MySQL, PostgreSQL, Oracle), and Excel reporting.",
+      "Developed scheduled actions to update execution status, generate reports, and send automated email summaries (daily, weekly, monthly).",
+      "Implemented detailed database schema for tracking execution metadata such as execution_id, automation_status, use_case_name, and execution_time.",
+      "Enabled Excel report generation with trend analysis and summary/detail views for audit and compliance.",
+      "Built rules for automated reporting, including execution_status_tracker_db and periodic email notifications."
+    ]
+  },
+  {
+    "title": "Zscaler Integration Pack",
+    "details": [
+      "Designed and implemented integration between StackStorm and Zscaler Internet Access platform.",
+      "Developed automation workflows to manage firewall policies, URL filtering, and IP groups.",
+      "Built reusable actions supporting both information retrieval and configuration updates.",
+      "Enabled flexible and scalable automation for multiple Zscaler environments."
+    ]
+  },
+  {
+    "title": "Exchange Online Integration Pack",
+    "details": [
+      "Developed integration between StackStorm and Microsoft Exchange Online to support mailbox and administrative automation.",
+      "Implemented secure authentication using Azure AD application credentials (Client ID, Secret, Tenant ID).",
+      "Automated Exchange Online administrative tasks such as user management, mailbox configuration, and permissions handling.",
+      "Designed reusable and scalable workflows leveraging PowerShell cmdlets for advanced Exchange features.",
+      "Enabled communication to streamline collaboration and reduce manual intervention in mailbox operations."
+    ]
+  },
+  {
+    "title": "Citrix Integration Pack",
+    "details": [
+      "Developed integration between StackStorm and Citrix environments for automated monitoring and management.",
+      "Implemented workflows to retrieve machine status, session details, and resource utilization in real time.",
+      "Streamlined issue diagnosis by automating collection of connection failures, performance metrics, and logon statistics.",
+      "Enabled proactive monitoring of Citrix Virtual Apps and Desktops to reduce downtime and improve user experience.",
+      "Designed reusable pack with configurable parameters for seamless adoption across multiple Citrix environments."
+    ]
+  },
+  {
+    "title": "MongoDB Integration Pack",
+    "details": [
+      "Designed and delivered integration between StackStorm and MongoDB for seamless database automation.",
+      "Enabled automated insert, update, and query operations to streamline storage and retrieval of automation data.",
+      "Built workflows supporting both structured documents and file management with GridFS.",
+      "Improved auditability by automating execution log storage and retrieval across multiple use cases.",
+      "Packaged solution as a reusable module with configurable parameters for enterprise-wide adoption."
+    ]
+  },
+  {
+    "title": "Azure DevOps Integration Pack",
+    "details": [
+      "Developed StackStorm integration with Azure DevOps to automate pipelines, repositories, and project operations.",
+      "Enabled dynamic pipeline creation and execution across multiple repositories through reusable workflows.",
+      "Pack designed for multi-organization usage with flexible configuration for enterprise teams."
+    ]
+  },
+  {
+    "title": "InfluxDB Integration Pack",
+    "details": [
+      "Developed StackStorm integration for InfluxDB to enable automated time-series data collection and management.",
+      "Implemented workflows to write metrics across buckets and organizations with configurable parameters.",
+      "Enhanced observability by integrating InfluxDB actions into automation pipelines for centralized monitoring.",
+      "Pack designed for reusability across multiple client environments."
+    ]
+  },
+  {
+    "title": "O365 Email Integration Pack",
+    "details": [
+      "Developed StackStorm integration with Office 365 for automated email management via Microsoft Graph API.",
+      "Implemented actions to read, filter, and classify emails, including new vs. reply detection and batch marking as read.",
+      "Built secure workflows for sending emails with support for CC, attachments, and HTML formatting.",
+      "Extended automation with attachment retrieval and size-based filtering for enterprise workflows."
+    ]
+  },
+  {
+    "title": "O365 Email Helpdesk Pack",
+    "details": [
+      "Automated email intake process by monitoring Office 365 mailboxes for new and reply emails.",
+      "Enabled automatic incident creation and updates in ServiceNow based on email content.",
+      "Designed duplicate check mechanism to prevent re-processing of previously handled emails.",
+      "Implemented acknowledgment emails for seamless communication with end users.",
+      "Improved helpdesk efficiency by reducing manual intervention in incident logging."
+    ]
+  }
+]

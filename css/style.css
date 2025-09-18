@@ -1,0 +1,445 @@
+
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Base Styles ===== */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* ===== Navigation ===== */
+nav {
+  background: #34495e;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+nav a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+nav a:hover, nav a:focus {
+  color: #007bff;
+  text-decoration: none;
+  outline: none;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 60px 20px;
+  animation: fadeIn 1s ease-in;
+}
+h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+h3 {
+  color: #34495e;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* ===== Card Layout ===== */
+.card {
+  background: #fff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Lists ===== */
+ul {
+  margin: 15px 0 0 25px;
+}
+ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* ===== Links ===== */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+a:hover, a:focus {
+  color: #0056b3;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.95rem;
+}
+footer a {
+  color: #4dabf7;
+}
+footer a:hover {
+  color: #fff;
+}
+
+/* ===== Utility Classes ===== */
+.text-center {
+  text-align: center;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #0056b3;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  header h1 { font-size: 2rem; }
+  header p { font-size: 1rem; }
+  nav ul li { margin: 0 10px; }
+  nav a { font-size: 1rem; }
+  section { padding: 40px 15px; }
+  h2 { font-size: 1.8rem; }
+  .container { padding: 0 15px; }
+}
+
+@media (max-width: 480px) {
+  header h1 { font-size: 1.8rem; }
+  nav ul li { display: block; margin: 10px 0; }
+  .card { padding: 15px; }
+}
+
+.profile-photo {
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 3px solid #fff;
+
+}
+
+.site-header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* keeps mobile-friendly */
+}
+
+.header-text {
+  text-align: left;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.header-text .contact {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.header-text .tagline {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+
+/* CSS Variables for Theming */
+:root {
+  --accordion-bg: #ffffff;
+  --accordion-btn-bg: linear-gradient(135deg, #f5f6f8, #e5e7eb);
+  --accordion-btn-hover: linear-gradient(135deg, #e2e8f0, #d1d5db);
+  --accordion-border: #d1d5db;
+  --accordion-text: #1f2937;
+  --accordion-accent: #2563eb;
+  --accordion-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --font-size-base: clamp(14px, 2vw, 15px);
+  --font-size-heading: clamp(16px, 2.5vw, 18px);
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accordion-bg: #1f2937;
+    --accordion-btn-bg: linear-gradient(135deg, #374151, #4b5563);
+    --accordion-btn-hover: linear-gradient(135deg, #4b5563, #6b7280);
+    --accordion-border: #4b5563;
+    --accordion-text: #e5e7eb;
+    --accordion-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --accordion-accent: #60a5fa;
+  }
+}
+
+/* Accordion Wrapper */
+.accordion {
+  border: 1px solid var(--accordion-border);
+  border-radius: 12px;
+  background: var(--accordion-bg);
+  box-shadow: var(--accordion-shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.accordion:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Accordion Button / Header */
+.accordion-btn {
+  background: var(--accordion-btn-bg);
+  color: var(--accordion-text);
+  cursor: pointer;
+  padding: 16px 24px;
+  width: 100%;
+  border: none;
+  border-radius: 12px 12px 0 0;
+  text-align: left;
+  font-weight: 700;
+  font-size: var(--font-size-heading);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.accordion-btn:hover,
+.accordion-btn.active {
+  background: var(--accordion-btn-hover);
+  box-shadow: inset 0 -3px 0 var(--accordion-accent);
+}
+
+.accordion-btn:active {
+  transform: scale(0.98);
+}
+
+/* Focus State for Accessibility */
+.accordion-btn:focus-visible {
+  outline: 3px solid var(--accordion-accent);
+  outline-offset: 2px;
+  border-radius: 12px;
+}
+
+/* Arrow Icon (CSS-based Chevron) */
+.accordion-btn .accordion-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.accordion-btn .accordion-icon::before,
+.accordion-btn .accordion-icon::after {
+  content: '';
+  position: absolute;
+  background: var(--accordion-text);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-btn .accordion-icon::before {
+  width: 10px;
+  height: 2px;
+  top: 7px;
+  left: 3px;
+  transform: rotate(45deg);
+}
+
+.accordion-btn .accordion-icon::after {
+  width: 10px;
+  height: 2px;
+  top: 7px;
+  left: 8px;
+  transform: rotate(-45deg);
+}
+
+.accordion-btn.active .accordion-icon::before {
+  transform: rotate(-45deg);
+  left: 8px;
+}
+
+.accordion-btn.active .accordion-icon::after {
+  transform: rotate(45deg);
+  left: 3px;
+}
+
+/* Accordion Content */
+.accordion-content {
+  background: var(--accordion-bg);
+  border-top: 1px solid var(--accordion-border);
+  border-radius: 0 0 12px 12px;
+  padding: 0 24px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+  font-size: var(--font-size-base);
+  color: var(--accordion-text);
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Open State */
+.accordion-content:not([hidden]) {
+  padding: 16px 24px;
+  max-height: 1000px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* List Styling */
+.accordion-content ul {
+  margin: 0;
+  padding-left: 24px;
+  list-style-type: disc;
+}
+
+.accordion-content li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.accordion-content .duration {
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+/* Loading and Error States */
+.loading,
+.error {
+  text-align: center;
+  padding: 24px;
+  color: var(--accordion-text);
+  font-size: var(--font-size-base);
+  opacity: 0.8;
+}
+
+/* Grid Accordion Layout */
+.grid-accordion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 0 16px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .grid-accordion {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 8px;
+  }
+
+  .accordion-btn {
+    padding: 14px 16px;
+    font-size: clamp(15px, 2vw, 16px);
+  }
+
+  .accordion-content {
+    padding: 0 16px;
+  }
+
+  .accordion-content:not([hidden]) {
+    padding: 14px 16px;
+  }
+
+  .accordion {
+    margin-bottom: 12px;
+  }
+  .show-more-btn {
+    padding: 12px 24px;
+    font-size: clamp(14px, 2vw, 15px);
+  }
+
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
